@@ -1,1 +1,3 @@
-# asteria-gs-launcher
+# Asteria Gameserver Launcher
+
+Uploading soon!
