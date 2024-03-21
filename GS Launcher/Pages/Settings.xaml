@@ -1,0 +1,34 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AsteriaMP.Pages"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="AsteriaMP.Pages.Settings"
+             mc:Ignorable="d" d:DesignWidth="386" Height="366">
+    <Grid>
+        <TextBox x:Name="EmailBox" Margin="17,33,17,0" TextWrapping="NoWrap" Text="" PreviewTextInput="TextBox_PreviewTextInput" VerticalAlignment="Top" Width="352" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" Width="352"/>
+        <Grid Margin="0,135,0,169" HorizontalAlignment="Center" Width="352">
+            <TextBox x:Name="PathBox" Margin="0,0,35,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Center" TextChanged="PathBox_TextChanged"/>
+            <Button Content="..." Margin="322,0,0,0" Width="30" RenderTransformOrigin="-1.3,-0.387" Click="Button_Click"/>
+        </Grid>
+        <Button Content="Save" Margin="280,318,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="Button_Click_1"/>
+        <Label Content="Hosting Email:" HorizontalAlignment="Left" Margin="16,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hosting Password:" HorizontalAlignment="Left" Margin="16,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Path (add a slash at the end for now):" HorizontalAlignment="Left" Margin="16,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.55,0.553"/>
+        <Grid Margin="0,249,0,44" HorizontalAlignment="Center" Width="352">
+            <Label Content="Gameserver DLL Path:" HorizontalAlignment="Left" Margin="0,-1,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.55,0.553"/>
+            <TextBox x:Name="DLLPathBox" Margin="0,0,35,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Center" TextChanged="PathBox_TextChanged"/>
+            <Button Content="..." Margin="322,0,0,0" Width="30" RenderTransformOrigin="-1.3,-0.387" Click="Button2_Click"/>
+        </Grid>
+        <Grid Margin="0,190,0,103" HorizontalAlignment="Center" Width="352">
+            <Label Content="Redirect DLL Path:" HorizontalAlignment="Left" Margin="0,-1,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.55,0.553"/>
+            <TextBox x:Name="RedirectPathBox" Margin="0,0,35,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="PathBox_TextChanged"/>
+            <Button Content="..." Margin="322,0,0,0" Width="30" RenderTransformOrigin="-1.3,-0.387" Click="Button3_Click"/>
+        </Grid>
+
+
+
+    </Grid>
+</UserControl>

@@ -1,3 +1,3 @@
-# Asteria Gameserver Launcher
+# Asteria GS Launcher
 
-Uploading soon!
+Well.. it's here...
